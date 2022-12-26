@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebase';
 
 const Register = () => {
-  const [err,setErr] = useState(false);
+  const [err, setErr] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const displayName = e.target[0].value;
